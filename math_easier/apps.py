@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class MatheasierConfig(AppConfig):
-    name = 'MathEasier'
+    name = 'math_easier'
