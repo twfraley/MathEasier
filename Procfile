@@ -1,1 +1,1 @@
-'web: gunicorn MathHarder.wsgi --log-file -' 
+'web: gunicorn wsgi --log-file -' 
