@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class CharactersheetConfig(AppConfig):
-    name = 'CharacterSheet'
+    name = 'character_sheet'
