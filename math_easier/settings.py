@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'US/Eastern'
 
 USE_I18N = True
 
@@ -133,6 +133,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+# Sets local settings for django-heroku
 django_heroku.settings(locals())
 
+# Disables ssl for local databases only (as heroku requires ssl)
 del DATABASES['default']['OPTIONS']['sslmode']
