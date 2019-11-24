@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
+
+# "import *" is generally bad practice,
+# but here it should work out alright.
+from character_sheet.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name="home.html"), name="home"),
     # path('character-sheet/', include('math_easier.urls'))
 ]
