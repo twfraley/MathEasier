@@ -20,3 +20,10 @@ Directory map for Django newcomers:
 -- Contains entirety of math_easier Angular app, including components and services
 - static
 - staticfiles
+
+## Building locally:
+
+Running Django: 
+`python manage.py runserver`
+Angular: 
+`ng build --prod --output-path ../static/ang --watch --output-hashing none`
