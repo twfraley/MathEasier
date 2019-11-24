@@ -25,6 +25,7 @@ Directory map for Django newcomers:
 
 Running Django: 
 `python manage.py runserver`
+
 Angular: 
 `ng build --prod --output-path ../static/ang --watch --output-hashing none`
 
